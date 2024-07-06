@@ -54,7 +54,7 @@ Include /etc/ssh/sshd_config.d/*.conf
 #IgnoreRhosts yes
 
 # To disable tunneled clear text passwords, change to no here!
-#PasswordAuthentication yes
+PasswordAuthentication {{ passwd_auth }}
 #PermitEmptyPasswords no
 
 # Change to yes to enable challenge-response passwords (beware issues with
